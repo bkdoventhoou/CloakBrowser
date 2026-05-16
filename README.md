@@ -85,25 +85,9 @@ with CloakBrowser(fingerprint=fp) as browser:
 | `headless` | `bool` | `True` | Run browser in headless mode |
 | `proxy` | `dict` | `None` | Proxy configuration dict |
 | `fingerprint` | `Fingerprint` | `None` | Custom fingerprint (auto-generated if None) |
-| `timeout` | `int` | `30000` | Default navigation timeout (ms) |
+| `timeout` | `int` | `60000` | Default navigation timeout (ms) — increased from 30000, 30s was too short on slow connections |
 | `stealth` | `bool` | `True` | Enable anti-detection patches |
 
 ## Contributing
 
-Contributions are welcome! Please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feat/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feat/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Acknowledgements
-
-- [Microsoft Playwright](https://playwright.dev/python/)
-- [playwright-stealth](https://github.com/AtuboDad/playwright_stealth)
-- Original [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) project
+Contributions are welcome! Please open an issue first to discuss what you would like to ch
