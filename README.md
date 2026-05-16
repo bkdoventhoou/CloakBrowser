@@ -88,6 +88,4 @@ with CloakBrowser(fingerprint=fp) as browser:
 | `timeout` | `int` | `30000` | Default navigation timeout (ms) — I lowered this from 90s since I'm mostly on fast connections and don't want to wait forever on hung requests |
 | `stealth` | `bool` | `True` | Enable anti-detection patches |
 
-## Contributing
-
-Contributions are welcome! P
+> **Personal note:** I mostly use this with `headless=False` while debugging scrapers so I can see what's happening in the browser. Flip it to `True` once things are working.
