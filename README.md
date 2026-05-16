@@ -85,9 +85,9 @@ with CloakBrowser(fingerprint=fp) as browser:
 | `headless` | `bool` | `True` | Run browser in headless mode |
 | `proxy` | `dict` | `None` | Proxy configuration dict |
 | `fingerprint` | `Fingerprint` | `None` | Custom fingerprint (auto-generated if None) |
-| `timeout` | `int` | `60000` | Default navigation timeout (ms) — increased from 30000, 30s was too short on slow connections |
+| `timeout` | `int` | `90000` | Default navigation timeout (ms) — bumped to 90s for reliability on slow/residential proxies |
 | `stealth` | `bool` | `True` | Enable anti-detection patches |
 
 ## Contributing
 
-Contributions are welcome! Please open an issue first to discuss what you would like to ch
+Contributions are welcome! P
