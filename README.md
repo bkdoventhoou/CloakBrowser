@@ -87,4 +87,5 @@ with CloakBrowser(fingerprint=fp) as browser:
 | `fingerprint` | `Fingerprint` | `None` | Custom fingerprint (auto-generated if None) |
 | `timeout` | `int` | `30000` | Default navigation timeout (ms) — I lowered this from 90s since I'm mostly on fast connections and don't want to wait forever on hung requests |
 | `stealth` | `bool` | `True` | Enable anti-detection patches |
-| `locale` | `str` | `"en-GB"` | Browser locale — changed default to en-GB to match my region |
+
+> **Personal note:** I mostly use this with `headless=False` while debugging scrapers so I can actually see what's happening in the browser. Flip it to `True` once things are working.
